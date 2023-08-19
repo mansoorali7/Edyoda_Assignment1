@@ -1,160 +1,117 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Problem Number 2:
 
-# C extensions
-*.so
+# Write a Python program that accepts a word from the user and reverse it.
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
+# Sample Test Case
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+# Input : Edyoda
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# output: adoydE 
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
 
-# Translations
-*.mo
-*.pot
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+# input_string = input("Enter the user input string:")
 
-# Flask stuff:
-instance/
-.webassets-cache
+# for i in input_string:
+#     i = input_string[::-1]
+# print("The Code Running Sucessfully and it will print in reverse order like:",     i)
 
-# Scrapy stuff:
-.scrapy
 
-# Sphinx documentation
-docs/_build/
 
-# PyBuilder
-.pybuilder/
-target/
 
-# Jupyter Notebook
-.ipynb_checkpoints
 
-# IPython
-profile_default/
-ipython_config.py
+# Write a Python program to count the number of even and odd numbers from a series of numbers.
 
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
+# Sample numbers : numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+# Expected Output :
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
+# Number of even numbers : 4
 
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
+# Number of odd numbers : 5
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
+# sample_numbers = 1,2,3,4,5,6,7,8,9
+# even_count = 0
+# odd_count = 0
+# sum=0
+# for i  in sample_numbers:
+#     if i%2==0:
+#         even_count+=1
+#     else:
+#         odd_count+=1
+# print("Number of Even Numbers is:", even_count)
+# print("Number of Odd count is:", odd_count)
+        
+     
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
 
-# SageMath parsed files
-*.sage.py
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
+# Write a Python program to get the Fibonacci series between 0 to 50
 
-# Spyder project settings
-.spyderproject
-.spyproject
 
-# Rope project settings
-.ropeproject
 
-# mkdocs documentation
-/site
+# Note : The Fibonacci Sequence is the series of numbers :
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+# 0, 1, 1, 2, 3, 5, 8, 13, 21, ....
 
-# Pyre type checker
-.pyre/
+# Every next number is found by adding up the two numbers before it.
 
-# pytype static type analyzer
-.pytype/
+# Expected Output : 1 1 2 3 5 8 13 21 34
 
-# Cython debug symbols
-cython_debug/
 
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+input_number = int(input("Enter the Fibonacci series range:"))       # Here im giving range of 0 to n----> 0 to 50
+
+first_element = 0
+second_element = 1
+sum = 0
+if input_number == first_element:
+    print("Fibonacci Series starts with",   first_element)
+elif input_number == second_element:
+    print("Fibonacci series second element is:", second_element)
+else:
+    for Fibonacci_series in range(2, input_number+1):
+        Fibanacci_series = first_element + second_element
+        first_element = second_element
+        second_element = Fibanacci_series
+        if Fibanacci_series>=input_number:
+            break
+        print( Fibanacci_series, end = "  ")
+
+
+
+    
+
+   
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
